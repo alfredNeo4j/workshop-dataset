@@ -2,13 +2,12 @@
 
 Data used in the Neo4j GraphAcademy "Hands-on GenAI Workshop" (`workshop-hands-on-genai`).
 
-## Shop dataset (customers.csv, products.csv, purchased.csv)
+## Shop dataset
 
-Used in the Bonus: Import lesson to build a small Customer-PURCHASED->Products graph.
+The same Customer-PURCHASED->Products graph, loaded two different ways:
 
-- `customers.csv` — id, name, email (4 rows)
-- `products.csv` — id, name, price (3 rows)
-- `purchased.csv` — customerId, productId, quantity (8 rows)
+- `shop-dataset.cypher` — run directly in Query, used by the Query, Bloom, Dashboards and Agents lessons so they have data to work with.
+- `customers.csv`, `products.csv`, `purchased.csv` — the same data as separate files, used in the Bonus: Import lesson to teach loading data from a spreadsheet. Running Import after `shop-dataset.cypher` does not create duplicates.
 
 ## Poster rubric dataset (poster-rubric-dataset.cypher)
 
